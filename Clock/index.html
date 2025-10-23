@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=“utf-8”>
+        <link rel="stylesheet" href="clock.css">
+        <script type="text/javascript" src="clock.js" defer></script>
+        <title>IM-Clock</title>
+    </head>
+    <body>
+        <div id="clock">
+            <audio id="tick" hidden title="tick"><source src="Assets/Audio/tick.mp3"></audio>
+            <div id="hour"></div>
+            <div id="min"></div>
+            <div id="sec"></div>
+            <button id="mute_button" onclick="toggleSound()"><img id="mute_icon" src="Assets/Images/mute.svg" alt="toggle sound" width="16" height="16"/></button>
+        </div>
+    </body>
+</html>

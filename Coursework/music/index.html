@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="scripts/myScript.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<h1>My Music Player</h1>
+			<div id="trackPlayer">
+				<img id="trackArt" src="art/creativeTechnologyShowreel.webp">
+				<div id="trackControls">
+					<img src="buttons/prev.png" class="button" onclick="prev()">
+					<img src="buttons/play.png" class="button" id="playButton" onclick="playOrPause()">
+					<img src="buttons/next.png" class="button" onclick="next()">
+                    <img id="shuffle_off" src="buttons/shuffle.png" class="button" onclick="toggleShuffle()">
+				</div>
+				<div id="trackInfo">No track selected</div>
+                <progress id="seek" value="0" max="100" onclick="seek(event)"></progress>
+                <p id="seek_timer">00:00/00:00</p>
+			</div>
+			<div id="tracklist">
+				<div class="listTrack" onclick="playTrack(0)">
+					<audio onended="next()" class="track" hidden title="&quot;Creative Technology Showreel&quot; by pumpupthemind"><source src="tracks/creative-technology-showreel-241274.mp3"></audio>
+					<img class="art" src="art/creativeTechnologyShowreel.webp">
+					<div class="trackName">Creative Technology Showreel</div>
+					<div class="artistName">pumpupthemind</div>
+				</div>
+				<div class="listTrack" onclick="playTrack(1)">
+					<audio onended="next()" class="track" hidden title="&quot;Lazy Day - Stylish Futuristic Chill&quot; by penguinmusic"><source src="tracks/lazy-day-stylish-futuristic-chill-239287.mp3"></audio>
+					<img class="art" src="art/penguinmusic.webp">
+					<div class="trackName">Lazy Day - Stylish Futuristic Chill</div>
+					<div class="artistName">penguinmusic</div>
+				</div>
+				<div class="listTrack" onclick="playTrack(2)">
+					<audio onended="next()" class="track" hidden title="&quot;Nightfall / Future Bass Music&quot; by SoulProdMusic"><source src="tracks/nightfall-future-bass-music-228100.mp3"></audio>
+					<img class="art" src="art/SoulProdMusic.jpg">
+					<div class="trackName">Nightfall / Future Bass Music</div>
+					<div class="artistName">SoulProdMusic</div>
+				</div>
+				<div class="listTrack" onclick="playTrack(3)">
+					<audio onended="next()" class="track" hidden title="&quot;Night Detective&quot; by Amaksi"><source src="tracks/night-detective-226857.mp3"></audio>
+					<img class="art" src="art/Amaksi.webp">
+					<div class="trackName">Night Detective</div>
+					<div class="artistName">Amaksi</div>
+				</div>
+				<div></div><div></div>
+			</div>
+		</div>
+	</body>
+</html>

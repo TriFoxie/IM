@@ -1,0 +1,97 @@
+#trackInfo {
+	font-size: 1.5rem;
+	text-align: center;
+}
+body {
+	margin: 0px;
+}
+#main {
+	background-color: #222;
+	color:white;
+	margin: auto;
+	padding: 1rem;
+	max-width: 70rem;
+}
+#main > h1 {
+	font-size: 3.5rem;
+	text-align: center;
+}
+#seek, #trackInfo {
+	width:90%;
+	margin: 2rem auto 0 auto;
+	display: block;
+}
+#seek_timer {
+    text-align: center;
+    margin: 0 auto 2rem auto;
+}
+#trackControls {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    #shuffle_on {
+        border: solid greenyellow 2px;
+        border-radius: 100%;
+    }
+    #shuffle_off {
+        border: none;
+    }
+}
+#trackControls .button{
+	height: 5rem;
+	width: 5rem;
+	cursor: pointer;
+}
+#trackControls .button:hover {
+	filter: brightness(115%); 
+}
+#trackControls #playButton, #playButton {
+	height: 6.5rem;
+	width: 6.5rem;
+}
+#trackArt {
+    width: 50%;
+    margin: 2rem 25%;
+}
+
+#tracklist {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#tracklist > div {
+	margin: 2px;
+	white-space: nowrap;
+    overflow: hidden;
+	flex: 1 0 300px;
+	display: grid;
+	grid-template-columns: 4rem 1fr;
+	grid-template-rows: 2rem 2rem;
+}
+.listTrack {
+	background-color: #ffffff22;
+	cursor: pointer;
+}
+.listTrack:hover {
+	background-color: #ffffff44;
+}
+
+.listTrack img {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-row-end: 3;
+	grid-column-end: 2;
+    height: 100%;
+	width: 100%
+}
+.trackName {
+	grid-area: 1 / 2 / 2 / 3; /* This is shorthand for the row start, column start, row end and column end */
+	padding-left: .5em;
+}
+.artistName {
+	grid-area: 2 / 2 / 3 / 3;
+	padding-left: .5em;
+}

@@ -1,0 +1,34 @@
+#clock, #hour, #min, #sec {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 512px;
+    height: 512px;
+}
+#clock {
+    position: relative;
+    margin: 64px auto 0 auto;
+    background-image: url(Assets/Images/clockface.png);
+}
+#hour, #min, #sec {
+    position: absolute;
+}
+#hour {
+    background-image: url(Assets/Images/hourhand.png);
+}
+#min {
+    background-image: url(Assets/Images/minhand.png);
+}
+#sec {
+    background-image: url(Assets/Images/sechand.png);
+}
+
+#mute_button {
+    background-color: gray;
+    border: solid #000 2px;
+    border-radius: 8px;
+
+}
+#mute_button:hover {
+    background-color: lightgray;
+}

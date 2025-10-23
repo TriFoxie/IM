@@ -1,0 +1,43 @@
+:root {
+    --background: rgb(57, 0, 106);
+    --light-text: rgb(255, 240, 255);
+    --dark-text: rgb(253, 149, 253);
+    --border: var(--dark-text);
+
+    color: var(--light-text);
+    font-family: "Cascadia Mono", serif;
+}
+
+a {
+    color: var(--light-text);
+}
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: calc(100dvw - 25rem) 25rem;
+}
+
+#music {
+    position: fixed;
+    width: 400px;
+    height: 100dvh;
+    overflow-y: clip;
+}
+#sidebar_overlay {
+    position: fixed;
+    padding: 0 1rem;
+}
+#content {
+    background-color: var(--background);
+    padding: 0 5rem;
+}
+
+.coursework {
+    padding: 0 2rem 2rem 2rem;
+
+    embed {
+        border: var(--border) solid 5px;
+        border-radius: 25px;
+        background: white;
+    }
+}

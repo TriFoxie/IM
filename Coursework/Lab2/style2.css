@@ -1,0 +1,61 @@
+body {
+    font-family: "DejaVu Sans", sans-serif;
+}
+#wrap {
+    width:750px;
+    margin:0 auto;
+    background:#fff;
+}
+#header {
+    background:#ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+#nav {
+    background:#c99;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 1px;
+}
+#main {
+    background:#0ff;
+    float: left;
+    width: 410px;
+    height: 500px;
+    margin: 10px;
+    border: #000 solid 3px;
+    border-radius: 5px;
+    padding: 0 20px 0 20px;
+}
+#sidebar {
+    background: #C837A8;
+    float: right;
+    width: 200px;
+    height: 500px;
+    margin: 10px;
+    padding: 0 20px 0 20px;
+    border: #000 solid 3px;
+    border-radius: 5px;
+    color: #fff;
+    li {
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+#footer {
+    background: #f1f1b8;
+    clear: both;
+    border-radius: 5px;
+    text-align: center;
+}
+#nav li {
+    float:left;
+    display:block;
+    width:90px;
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+}

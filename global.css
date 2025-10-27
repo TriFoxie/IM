@@ -1,0 +1,32 @@
+:root {
+    /* Color Variables */
+    --background: rgb(57, 0, 106);
+    --transparent-background: rgb(57,0,106, 0.2);
+    --light-text: rgb(255, 240, 255);
+    --dark-text: rgb(253, 149, 253);
+    --border: var(--dark-text);
+}
+
+body {
+    color: var(--light-text);
+    font-family: "Monospace";
+    background-image: url(Assets/Background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: var(--light-text);
+}
+
+#content {
+    padding: 0 min(5rem, 5%);
+}
+
+.container {
+    padding: 1rem min(2rem, 2%);
+    border-radius: 25px;
+    margin: 3rem 0;
+    backdrop-filter: blur(8px);
+    background-color: var(--transparent-background);
+}

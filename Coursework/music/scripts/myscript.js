@@ -91,7 +91,7 @@ function randomInt(max, prev) {
         let num;
         while (true) {
             num = Math.round(Math.random() * max)
-            if (num != prev) {
+            if (num !== prev) {
                 return num;
             }
         }

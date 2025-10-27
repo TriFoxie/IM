@@ -3,12 +3,13 @@
 	text-align: center;
 }
 body {
-	margin: 0px;
+	margin: 0;
 }
 #main {
-	background-color: #222;
+    backdrop-filter: blur(8px);
+	background-color: var(--transparent-background);
 	color:white;
-	margin: auto;
+	margin: 0;
 	padding: 1rem;
 	max-width: 70rem;
 }

@@ -20,7 +20,7 @@ a {
 }
 
 #content {
-    padding: 0 min(5rem, 5%);
+    padding: 0 min(2rem, 2%);
 }
 
 .container {
@@ -29,4 +29,8 @@ a {
     margin: 3rem 0;
     backdrop-filter: blur(8px);
     background-color: var(--transparent-background);
+
+    img {
+        float: right;
+    }
 }

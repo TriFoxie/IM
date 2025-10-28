@@ -1,3 +1,7 @@
+body {
+    background: none;
+}
+
 #clock, #hour, #min, #sec {
     background-repeat: no-repeat;
     background-size: contain;

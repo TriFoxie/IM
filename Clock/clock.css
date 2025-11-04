@@ -1,13 +1,9 @@
-body {
-    background: none;
-}
-
 #clock, #hour, #min, #sec {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    width: 512px;
-    height: 512px;
+    width: 5rem;
+    height: 5rem;
 }
 #clock {
     position: relative;
@@ -28,11 +24,10 @@ body {
 }
 
 #mute_button {
-    background-color: gray;
+    background-color: var(--dark-text);
     border: solid #000 2px;
     border-radius: 8px;
-
 }
 #mute_button:hover {
-    background-color: lightgray;
+    background-color: var(--light-text);
 }

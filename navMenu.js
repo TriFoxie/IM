@@ -1,8 +1,3 @@
-/*
- * Collapsible Navigation Menu
- * Use deferred loading
- */
-
 let desktopNavMenu;
 let mobileNavMenu;
 
@@ -17,7 +12,7 @@ window.onresize = function() {
 }
 
 function SetNavMenu() {
-    if (window.innerWidth <= 800){
+    if (window.innerWidth <= 1000){
         desktopNavMenu.style.display = "none";
         mobileNavMenu.style.display = "block";
     }else {

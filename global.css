@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Maple Mono";
+    src: url("Assets/Fonts/MapleMono.woff2");
+}
+@font-face {
+    font-family: "Maple Mono";
+    src: url("Assets/Fonts/MapleMonoBold.woff2");
+    font-weight: bold;
+}
+
 :root {
     /* Color Variables */
     --background: rgb(57, 0, 106);
@@ -48,11 +58,13 @@ a {
     border-bottom: solid var(--border) 2px;
 
     img {
-        float: right;
+        float: left;
         height: 3rem;
         margin: 0;
     }
-
+    ul {
+        margin-left: 20px;
+    }
     li {
         float: left;
         margin: 0 1rem 1rem 1rem;
@@ -61,6 +73,9 @@ a {
         border-radius: 10px;
         list-style: none;
     }
+    li:hover {
+        background-color: var(--dark-text);
+    }
     a {
         text-decoration: none;
     }
@@ -68,6 +83,15 @@ a {
     .current_page {
         background-color: var(--background);
         color: var(--light-text);
+    }
+    .current_page:hover {
+        background-color: var(--background);
+    }
+
+    #logo {
+        position: fixed;
+        top: 14px;
+        left: 10px;
     }
 }
 
@@ -78,8 +102,20 @@ a {
 
 #content {
     padding: 0 min(8rem, 15%);
-
+    margin-top: 100px;
     img {
         padding: 1rem 0 0.5rem 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav_menu {
+        #logo {
+            top: 25px;
+        }
+    }
+
+    #content {
+        margin-top: 130px;
     }
 }

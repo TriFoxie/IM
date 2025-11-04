@@ -15,7 +15,7 @@ body {
     padding: 0 1rem;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1080px) {
     #music {
         position: relative;
     }

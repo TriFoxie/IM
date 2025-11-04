@@ -6,19 +6,9 @@
     <link rel="stylesheet" href="global.css">
 </head>
 <body>
-<div class="nav_menu">
-    <ul>
-        <li id="current_page">Home</li>
-        <li><a href="Video">Video</a></li>
-        <li><a href="Activities">Activities</a></li>
-        <li><a href="Coursework">Coursework</a></li>
-        <li><a href="Clock">Clock</a></li>
-    </ul>
-</div>
 <div id="content">
-    <h1>Random Cookie Site</h1>
+    <h1 id="title">Random Cookie Site</h1>
     <div class="container">
-        <img src="Assets/Cookie.svg" alt="A super yummy cookie pic">
         <p>This site is totally all about cookies and absolutely nothing else. Just cookies. It's all you will find. Nothing but cookies forever and always.</p>
         <p>Oh, you're still reading? Maybe you like cookies. You should stay and enjoy the site then I guess!</p>
         <p>Enjoy the cookies :)</p>
@@ -26,6 +16,32 @@
         <p>Sorry there aren't actually any cookies I lied.</p>
         <p>Well other than that one picture of a cookie somewhere around here.</p>
     </div>
+    <div class="container" style="text-align: center;">
+        <img src="Assets/Cookie.svg" alt="A super yummy cookie pic">
+    </div>
 </div>
+<div class="nav_menu">
+    <div id="desktop_nav_menu">
+        <ul>
+            <li class="current_page">Home</li>
+            <li><a href="/IM/Video">Video</a></li>
+            <li><a href="/IM/Activities">Activities</a></li>
+            <li><a href="/IM/Coursework">Coursework</a></li>
+            <li><a href="/IM/Clock">Clock</a></li>
+            <!-- Root-relative links so it can be pasted to every page -->
+        </ul>
+    </div>
+    <div id="mobile_nav_menu">
+        <ul>
+            <li class="current_page"><img src="Assets/Home.svg" alt="Home"></li>
+            <li><a href="/IM/Video"><img src="Assets/Clapper.svg" alt="Video"></a></li>
+            <li><a href="/IM/Activities"><img src="Assets/Dice.svg" alt="Activities"></a></li>
+            <li><a href="/IM/Coursework"><img src="Assets/Pencil.svg" alt="Coursework"></a></li>
+            <li><a href="/IM/Clock"><img src="Assets/Clock.svg" alt="Clock"></a></li>
+        </ul>
+    </div>
+    <img src="Assets/Cookie.svg" alt="cookie logo">
+</div>
+<script src="navMenu.js"></script>
 </body>
 </html>

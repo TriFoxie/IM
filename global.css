@@ -9,28 +9,77 @@
 
 body {
     color: var(--light-text);
-    font-family: "Monospace";
+    font-family: "Maple Mono";
     background-image: url(Assets/Background.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
+    font-style: italic;
+}
+
+h1 {
+    color: var(--light-text);
+    font-style: normal;
 }
 
 a {
     color: var(--light-text);
-}
-
-#content {
-    padding: 0 min(2rem, 2%);
+    font-style: normal;
+    font-weight: bold;
 }
 
 .container {
-    padding: 1rem min(2rem, 2%);
+    padding: 1rem min(2rem, 8%);
     border-radius: 25px;
     margin: 3rem 0;
     backdrop-filter: blur(8px);
     background-color: var(--transparent-background);
+}
+
+.nav_menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    font-weight: bold;
+    font-size: 1.2rem;
+    backdrop-filter: blur(8px);
+    background-color: var(--transparent-background);
+    border-bottom: solid var(--border) 2px;
 
     img {
         float: right;
+        height: 3rem;
+        margin: 0;
+    }
+
+    li {
+        float: left;
+        margin: 0 1rem 1rem 1rem;
+        padding: 5px;
+        border: solid var(--border) 2px;
+        border-radius: 10px;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    .current_page {
+        background-color: var(--background);
+        color: var(--light-text);
+    }
+}
+
+#title {
+    margin-top: 7rem;
+}
+
+
+#content {
+    padding: 0 min(8rem, 15%);
+
+    img {
+        padding: 1rem 0 0.5rem 0;
     }
 }

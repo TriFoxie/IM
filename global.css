@@ -7,6 +7,17 @@
     src: url("Assets/Fonts/MapleMonoBold.woff2");
     font-weight: bold;
 }
+@font-face {
+    font-family: "Maple Mono";
+    src: url("Assets/Fonts/MapleMonoItalic.woff2");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Maple Mono";
+    src: url("Assets/Fonts/MapleMonoItalicBold.woff2");
+    font-style: italic;
+    font-weight: bold;
+}
 
 :root {
     /* Color Variables */
@@ -23,7 +34,6 @@ body {
     background-image: url(Assets/Background.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    font-style: italic;
 }
 
 h1 {

@@ -9,14 +9,7 @@ window.onload = function() {
 }
 
 function update() {
-    const now = new Date();
-    const s = now.getSeconds() + (now.getMilliseconds()/999);
-    const m = now.getMinutes() + (s/60);
-    const h = now.getHours() + (m/60);
-
-    sec.style.transform = `rotate(${s/60}turn)`;
-    min.style.transform = `rotate(${m/60}turn)`;
-    hour.style.transform = `rotate(${h/12}turn)`;
+    clock()
 }
 
 function toggleSound() {
@@ -29,5 +22,17 @@ function toggleSound() {
     }
 }
 
+function clock() {
+    const now = new Date();
+    const s = now.getSeconds() + (now.getMilliseconds()/999);
+    const m = now.getMinutes() + (s/60);
+    const h = now.getHours() + (m/60);
+
+    sec.style.transform = `rotate(${s/60}turn)`;
+    min.style.transform = `rotate(${m/60}turn)`;
+    hour.style.transform = `rotate(${h/12}turn)`;
+}
+
 update();
 setInterval(update, 10);
+

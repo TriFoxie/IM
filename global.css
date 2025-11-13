@@ -53,6 +53,14 @@ a {
     margin: 3rem 0;
     backdrop-filter: blur(8px);
     background-color: var(--transparent-background);
+
+    .img_left {
+        float: left;
+        margin: 0 10px;
+
+        border: solid var(--border) 3px;
+        border-radius: 20px;
+    }
 }
 
 .nav_menu {
@@ -124,13 +132,9 @@ a {
     margin-top: 7rem;
 }
 
-
 #content {
     padding: 0 min(8rem, 15%);
     margin-top: 100px;
-    img {
-        padding: 1rem 0 0.5rem 0;
-    }
 }
 
 @media only screen and (max-width: 1000px) {

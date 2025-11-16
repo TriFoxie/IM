@@ -9,20 +9,6 @@ window.onload = function() {
 }
 
 function update() {
-    clock()
-}
-
-function toggleSound() {
-    if (tickSound.paused) {
-        tickSound.play();
-        muteIcon.src = 'Assets/Images/unmute.svg';
-    }else{
-        tickSound.pause();
-        muteIcon.src = 'Assets/Images/mute.svg';
-    }
-}
-
-function clock() {
     const now = new Date();
     const s = now.getSeconds() + (now.getMilliseconds()/999);
     const m = now.getMinutes() + (s/60);
@@ -31,6 +17,15 @@ function clock() {
     sec.style.transform = `rotate(${s/60}turn)`;
     min.style.transform = `rotate(${m/60}turn)`;
     hour.style.transform = `rotate(${h/12}turn)`;
+}
+function toggleSound() {
+    if (tickSound.paused) {
+        tickSound.play();
+        muteIcon.src = 'Assets/Images/unmute.svg';
+    }else{
+        tickSound.pause();
+        muteIcon.src = 'Assets/Images/mute.svg';
+    }
 }
 
 update();

@@ -4,17 +4,20 @@
         <meta charset=“utf-8”>
         <link rel="stylesheet" href="../global.css">
         <link rel="stylesheet" href="clock.css">
+        <link rel="stylesheet" href="snake.css">
         <script type="text/javascript" src="clock.js" defer></script>
+        <script type="text/javascript" src="snake.js" defer></script>
         <title>IM-Clock</title>
     </head>
     <body>
     <div id="content">
-        <button id="mute_button" onclick="toggleSound()"><img id="mute_icon" src="Assets/Images/mute.svg" alt="toggle sound" width="16" height="16"/></button>
-        <div id="clock">
-            <audio id="tick" hidden title="tick"><source src="Assets/Audio/tick.mp3"></audio>
-            <div id="hour"></div>
-            <div id="min"></div>
-            <div id="sec"></div>
+        <div id="snake_game_area">
+            <div id="clock">
+                <audio id="tick" hidden title="tick"><source src="Assets/Audio/tick.mp3"></audio>
+                <div id="hour"></div>
+                <div id="min"></div>
+                <div id="sec"></div>
+            </div>
         </div>
     </div>
     <div class="nav_menu">

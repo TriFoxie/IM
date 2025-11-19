@@ -1,0 +1,14 @@
+#snake_game_area {
+    background: #000;
+    position: sticky;
+    left: 25%;
+    width: 100%;
+    height: 500px;
+}
+
+#fruit {
+    background: #f00;
+    height: 40px;
+    width: 40px;
+    border-radius: 25%;
+}

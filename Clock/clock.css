@@ -7,7 +7,7 @@
 }
 #clock {
     position: relative;
-    margin: 64px auto 0 auto;
+    margin: 0;
     background-image: url(Assets/Images/clockface.png);
 }
 #hour, #min, #sec {

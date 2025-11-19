@@ -1,14 +1,26 @@
-#snake_game_area {
+#snake_area {
     background: #000;
     position: sticky;
     left: 25%;
-    width: 100%;
-    height: 500px;
+    width: 50%;
+    height: 700px;
 }
-
 #fruit {
     background: #f00;
+    border: solid #000 2px;
+
+    position: absolute;
+}
+#snake_head {
     height: 40px;
     width: 40px;
-    border-radius: 25%;
+
+    position: absolute;
+}
+
+.snake_body {
+    background: #0f0;
+    border: solid #000 2px;
+
+    position: absolute;
 }

@@ -12,12 +12,7 @@
     border-radius: 25%;
     position: absolute;
 }
-#snake_head {
-    height: 40px;
-    width: 40px;
 
-    position: absolute;
-}
 #snake_controls {
     align-content: center;
 
@@ -28,7 +23,7 @@
     }
 }
 
-.snake_body {
+.snake_body, #snake_head {
     background: var(--transparent-background);
     border: solid var(--border) 1px;
     border-radius: 25%;

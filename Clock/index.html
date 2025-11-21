@@ -12,6 +12,14 @@
     <body>
     <div id="content">
         <div class="container">
+            <div id="clock" style="width:10vw;height:10vw;">
+                <audio id="tick" hidden title="tick"><source src="Assets/Audio/tick.mp3"></audio>
+                <div id="hour"></div>
+                <div id="min"></div>
+                <div id="sec"></div>
+            </div>
+        </div>
+        <div class="container">
             <div id="snake_controls">
                 <p>Use arrow keys or buttons to play.</p>
                 <button onclick="controls('left')"><--</button>
@@ -23,12 +31,7 @@
     </div>
     <div id="snake_area">
         <div id="snake_head">
-            <div id="clock">
-                <audio id="tick" hidden title="tick"><source src="Assets/Audio/tick.mp3"></audio>
-                <div id="hour"></div>
-                <div id="min"></div>
-                <div id="sec"></div>
-            </div>
+            <p style="text-align: center; font-size: 15px">:3</p>
         </div>
     </div>
 

@@ -1,14 +1,14 @@
 #snake_area {
-    background: #000;
+    background: var(--transparent-background);
     position: sticky;
     left: 25%;
     width: 50%;
     height: 700px;
 }
 #fruit {
-    background: #f00;
-    border: solid #000 2px;
-
+    background: red;
+    border: solid black 2px;
+    border-radius: 25%;
     position: absolute;
 }
 #snake_head {
@@ -19,8 +19,8 @@
 }
 
 .snake_body {
-    background: #0f0;
-    border: solid #000 2px;
-
+    background: transparent;
+    border: solid var(--border) 1px;
+    border-radius: 25%;
     position: absolute;
 }

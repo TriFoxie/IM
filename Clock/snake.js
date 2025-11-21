@@ -104,7 +104,7 @@ function gameChecks() {
     console.debug("Fruit: " + currentFruitPosition.toString() + "\nSnake: " + snake[0].toString());
     if (
         !(0 <= snake[0][0] && snake[0][0] < gridSize) ||
-        !(0 <= snake[0][1] && snake[0][0] < gridSize)
+        !(0 <= snake[0][1] && snake[0][1] < gridSize)
     ) {
         gameOver = true;
         console.log("Game Over: Snake left the game.")
@@ -140,5 +140,7 @@ setInterval(function() {
         moveSnake(movement);
         drawSnake(snake, gameArea);
         gameChecks();
+    } else {
+        gameArea.style.background = "red";
     }
     }, 250);

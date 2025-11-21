@@ -138,13 +138,25 @@ a {
 }
 
 @media only screen and (max-width: 1000px) {
+    body {
+        font-size: 25px;
+    }
     .nav_menu {
         #logo {
             top: 25px;
         }
+        img {
+            height: 6rem;
+        }
+        ul {
+            margin-left: 70px;
+        }
+        li {
+            border-width: 4px;
+        }
     }
 
     #content {
-        margin-top: 130px;
+        margin-top: 230px;
     }
 }

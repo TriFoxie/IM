@@ -2,8 +2,9 @@
     background: var(--transparent-background);
     position: sticky;
     left: 25%;
-    width: 50%;
-    height: 700px;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 2%;
 }
 #fruit {
     background: red;
@@ -17,10 +18,35 @@
 
     position: absolute;
 }
+#snake_controls {
+    align-content: center;
+
+    button {
+        border-radius:25%;
+        width:40px;
+        height:40px;
+    }
+}
 
 .snake_body {
-    background: transparent;
+    background: var(--transparent-background);
     border: solid var(--border) 1px;
     border-radius: 25%;
     position: absolute;
+}
+
+@media only screen and (max-width: 1000px) {
+    #snake_area {
+        width: 75vw;
+        height: 75vw;
+        left: 12.5%;
+    }
+
+    #snake_controls {
+        button {
+            width: 80px;
+            height: 80px;
+            margin: 20px;
+        }
+    }
 }

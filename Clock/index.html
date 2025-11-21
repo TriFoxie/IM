@@ -11,23 +11,27 @@
     </head>
     <body>
     <div id="content">
-        <div id="snake_area">
-            <div id="snake_head">
-                <div id="clock">
-                    <audio id="tick" hidden title="tick"><source src="Assets/Audio/tick.mp3"></audio>
-                    <div id="hour"></div>
-                    <div id="min"></div>
-                    <div id="sec"></div>
-                </div>
+        <div class="container">
+            <div id="snake_controls">
+                <p>Use arrow keys or buttons to play.</p>
+                <button onclick="controls('left')"><--</button>
+                <button onclick="controls('up')">up</button>
+                <button onclick="controls('down')">down</button>
+                <button onclick="controls('right')">--></button>
             </div>
         </div>
-        <div id="snake_controls">
-            <button onclick="controls('left')"><--</button>
-            <button onclick="controls('up')">up</button>
-            <button onclick="controls('down')">down</button>
-            <button onclick="controls('right')">--></button>
+    </div>
+    <div id="snake_area">
+        <div id="snake_head">
+            <div id="clock">
+                <audio id="tick" hidden title="tick"><source src="Assets/Audio/tick.mp3"></audio>
+                <div id="hour"></div>
+                <div id="min"></div>
+                <div id="sec"></div>
+            </div>
         </div>
     </div>
+
     <div class="nav_menu">
         <img id="logo" src="../Assets/Cookie.svg" alt="cookie logo">
         <!-- Modify links when pasting, use deferred loading -->
